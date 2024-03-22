@@ -1,0 +1,90 @@
+{"borderLinePoints": [
+		{
+			"lat": "41.7230210",
+			"lng": "-72.7618132"
+		}, {
+			"lat": "41.7412780",
+			"lng": "-72.7502010"
+		}, {
+			"lat": "41.7654588",
+			"lng": "-72.6721540"
+		}, {
+			"lat": "41.7474610",
+			"lng": "-72.6907373"
+		}, {
+			"lat": "41.7274806",
+			"lng": "-72.6911596"
+		}
+	],
+ "pois":[
+   {  "location":"150 hillcrest west hartford ct 06110",
+      "title":"POI Title 1",
+      "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pulvinar tellus purus, sed rhoncus velit porta quis. Aenean imperdiet massa vel eros iaculis maximus. Donec viverra egestas porta. Donec pretium nisi in nibh tristique, et suscipit metus malesuada. Praesent eget ligula sed erat tempus condimentum. Nulla vitae mi faucibus, accumsan purus et, rhoncus ex. Donec ac posuere sapien. Fusce facilisis pulvinar porta. ",
+	  "icon":"img/poiIcon.png",
+      "images":[
+         {
+            "medium":"9036958611_fa1bb7f827_m.jpg",
+            "big":"9036958611_fa1bb7f827_b.jpg"
+         },
+         {
+            "medium":"9041440555_2175b32078_m.jpg",
+            "big":"9041440555_2175b32078_b.jpg"
+         },
+         {
+            "medium":"8985207189_01ea27882d_m.jpg",
+            "big":"8985207189_01ea27882d_b.jpg"
+         },
+         {
+            "medium":"8962691008_7f489395c9_m.jpg",
+            "big":"8962691008_7f489395c9_b.jpg"
+         }
+      ]
+   },
+    {  "location":"100 hillcrest west hartford ct 06110",
+      "title":"POI Title 2",
+      "content":"This is a testing POI 2 of content",
+	  "icon":"img/poiIcon.png",
+      "images":[
+         {
+            "medium":"6309906627_b5706c42e4_m.jpg",
+            "big":"6309906627_b5706c42e4_b.jpg"
+         },
+         {
+            "medium":"8732133694_0c7e400022_m.jpg",
+            "big":"8732133694_0c7e400022_b.jpg"
+         },
+         {
+            "medium":"9032543579_1217e6566b_m.jpg",
+            "big":"9032543579_1217e6566b_b.jpg"
+         },
+         {
+            "medium":"9036037912_83576fe5ab_m.jpg",
+            "big":"9036037912_83576fe5ab_b.jpg"
+         }
+      ]
+   },
+    {  "location":"120 hillcrest west hartford ct 06110",
+      "content":"",
+      "title":"POI Title 3",
+	  "icon":"img/poiIcon.png",
+      "images":[
+         {
+            "medium":"6309906627_b5706c42e4_m.jpg",
+            "big":"6309906627_b5706c42e4_b.jpg"
+         },
+         {
+            "medium":"8732133694_0c7e400022_m.jpg",
+            "big":"8732133694_0c7e400022_b.jpg"
+         },
+         {
+            "medium":"9032543579_1217e6566b_m.jpg",
+            "big":"9032543579_1217e6566b_b.jpg"
+         },
+         {
+            "medium":"9036037912_83576fe5ab_m.jpg",
+            "big":"9036037912_83576fe5ab_b.jpg"
+         }
+      ]
+   }
+]
+}

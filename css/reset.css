@@ -1,0 +1,87 @@
+/* Title: Primary Reset Stylesheet | Author: Stephen Grainer | Modified: April 13, 2011
+   Description:
+   Stylesheet to reset general browser styles
+   v1.0 | 20080212 - Reset CSS modified from http://meyerweb.com/eric/tools/css/reset/
+------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, em, img, strike, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { 	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+caption,
+th,
+td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after {
+	content: '';
+	content: none;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+:focus {
+	outline: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* hr.clearer {
+	height:0px;
+	display: block;
+	clear: both;
+	margin: 0px;
+	padding:0px;
+	visibility: hidden;
+}
+* {
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+a,
+a:hover {
+	text-decoration:none;
+}
+article,
+footer,
+header,
+hgroup,
+nav,
+aside,
+section {
+	display:block;
+}

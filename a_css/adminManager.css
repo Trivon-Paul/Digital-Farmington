@@ -1,0 +1,136 @@
+#adminUser {
+	background:#fff;
+	border: solid 2px #A3C087;
+	padding:12px;
+	width:960px;
+	margin:30px auto;
+	text-align:center;
+}
+#adminUser h1 {
+	text-align:center;
+}
+#updateForm {
+	display: block;
+	margin: 35px 0px 0px 260px;
+}
+#adminUserForm {
+	background: #efefef;
+	border: solid 2px;
+	/* padding: 20px; */
+	min-width: 380px;
+	/* margin: 0px auto; */
+}
+#adminUserForm h2 {
+	text-align:center;
+}
+#adminUserForm #adminUserMain {
+	width: 300px;
+	text-align: right;
+	padding: 20px;
+	margin: 0px auto;
+}
+#adminUserForm #adminUserMain .row {
+	margin-bottom:8px;
+}
+#adminUserForm #adminUserMain p.col {
+	width:65px;
+	text-align:right;
+	vertical-align:0px !important;
+}
+#adminUserForm #adminUserMain input.col {
+	width:165px;
+}
+#adminUserForm #submit {
+	/* width: 100px; */
+	/* height: 22px; */
+	/* border-radius: 9px; */
+	/* background: #F1F1F1; */
+	font-size: 14px;
+	/* letter-spacing: 1px; */
+}
+#adminUserForm .updateNotice {
+	color:#c00;
+	font-size:12px;
+	letter-spacing:0.5px;
+	text-align:center;
+}
+#adminUserForm .updateNotice:first-line {
+	font-weight:normal;
+	font-size:14px
+}
+/*------------------------------------------------------------#administratorList------------------------------------------------------------*/
+#administratorList {
+	display: block;
+	vertical-align: top;
+	padding: 8px 0px;
+	background: #EFEFEF;
+	border-right: solid 2px #000;
+	text-align:left;
+	width: 250px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+}
+#administratorList .name {
+	font-weight:bold;
+	font-size: 14px;
+	display: block; text-decoration: none; 
+	padding: 3px 13px;  font-size: 12px; 
+}
+#administratorList .modifyUser,
+#administratorList .userData {
+	display:inline-block;
+	vertical-align:top;
+}
+#administratorList .modifyUser {
+	padding: 4px 0px;
+	float: left;
+}
+#administratorList .modifyUser a {
+	width:17px;
+	height:20px;
+	margin-bottom:3px;
+	display: block;
+	direction: rtl;
+	overflow: hidden;
+}
+#administratorList .modifyUser a:hover {
+	overflow:visible;
+}
+#administratorList .userData li {
+	font-size: 11px;
+	font-weight: bold;
+}
+#administratorList .userData li span {
+	display:inline-block;
+	width: 65px;
+	/* font-weight:bold; */
+	padding-left: 5px;
+}
+#administratorList a {
+    clear: both;
+    border-bottom: solid 1px #E0E0E0;
+    padding: 0px 10px;
+	display:block;
+}
+
+#administratorList a summary {
+    background: #fff;
+    border-bottom: solid 1px #ebebeb;
+    margin: 0px -10px;
+    padding: 3px 18px;
+}
+
+#administratorList a:hover {
+    background: #fbfbfb;
+}
+
+ul.userData {
+    margin: 10px;
+}#administratorList .userData li a {
+    font-weight: bold;
+}label.clickable.bluebutton {
+    width: 35%;
+    display: block;
+}

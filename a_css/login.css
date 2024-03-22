@@ -1,0 +1,121 @@
+
+#adminBar {
+	height: 36px;
+	background: #000;
+	border-bottom: solid 1px #FFF;
+	position: relative;
+	z-index: 999;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+#adminBar * {
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	color:#333;
+	line-height:140%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+#adminBar #adminContainer {
+	margin:0px 20px;
+}
+#adminBar a.logo {
+	padding: 5px 10px 0px 20px;
+	margin-top: 0px;
+	float: left;
+	height:30px;
+}
+#adminBar .adminBtns {
+	display: block;
+	height: 26px;
+	font-weight: normal;
+	padding: 2px 9px;
+	background: #999;
+	text-decoration: none;
+	margin-left: 4px;
+	margin-top: 9px;
+}
+#adminBar .adminBtns:hover {
+	background:#ccc;
+}
+#adminBar .drop {
+	position: absolute;
+	top: 35px;
+}
+#adminBar .drop a {
+	border-top: solid 1px #CCC;
+	width: 100%;
+	margin: 0px;
+	height: 25px;
+}
+#adminContainer img {
+    height: 32px;
+    margin: 1px;
+}
+.message {
+	font-size:13px !important;
+	color:#b22 !important;
+	font-weight:normal !important;
+	text-align:center;
+}
+
+header {
+	border-bottom:none;
+}
+#login {
+	background:#fff;
+	border: solid 2px #999;
+	padding: 40px 30px;
+	text-align: right;
+	display: block;
+	margin: 70px auto;
+	width: 450px;
+	height: 250px;
+}
+#login h1 {
+	text-align:center;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 1px;
+}
+#login #loginMain {
+	text-align:center;
+	padding: 18px 0px 6px;
+}
+#login #loginMain .row {
+	margin-bottom: 15px;
+}
+#login #loginMain p.col {
+	text-align:right;
+	vertical-align: -8px !important;
+	width: 90px;
+}
+#login #loginMain input.col {
+	width: 235px;
+	height: 30px;
+	font-size: 18px;
+}
+#login #submit {
+	width: 120px;
+	height: 32px;
+	border-radius: 9px;
+	background: #F1F1F1;
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+#login .updateNotice{
+	color:#c00;
+	font-size:12px;
+	letter-spacing:0.5px;
+	text-align:center;
+}
+#login .updateNotice:first-line{
+	font-weight:normal;
+	font-size:14px
+}#login #loginMain .row + .row {
+    margin-bottom: 5px;
+}

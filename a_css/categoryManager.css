@@ -1,0 +1,70 @@
+ html, body{
+        overflow: auto;
+    }
+
+.changeTo {
+	display: inline-block;
+	width: 300px;
+	font-size: 14px;
+	height: 30px;
+}
+.categoryName {
+	display: inline-block;
+	width: 240px;
+	font-size: 14px;
+}
+li.category.head p {
+	font-weight: bold !important;
+	font-size: 18px;
+}
+li.category {
+	padding: 2px 6px;
+	border-bottom: solid 1px #cecece;
+}
+li.category:nth-child(2n) {
+	background: #ededed;
+}
+label.dot {
+	width: 15px;
+	display: inline-block;
+	text-align: center;
+}
+img.poiDot {
+	display: block;
+	margin: 0px;
+}
+.dotColor {
+	display: inline-block;
+	margin: 0px 10px 0px 5px;
+	position: relative;
+}
+input[type="radio"] {
+	width: 15px;
+	display: block;
+}
+.groupSelector {
+	background-color: #fff;
+	padding: 5px;
+	border: solid 1px #000;
+	width: 120px;
+	z-index: 10;
+	top: -5px;
+}
+.groupSelector li {
+	display: block;
+	padding: 5px;
+	border: solid 1px #fff;
+	background-color: #eee;
+	float: left;
+}
+.groupSelector li.selected {
+	background-color: #A99;
+}
+.head .dotColor {
+	margin: 0px 3px 0px 5px;
+}
+.head .dotColor span {
+	font-size: 36px;
+	line-height: 0px !important;
+	vertical-align: -8px;
+}

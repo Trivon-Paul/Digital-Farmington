@@ -1,0 +1,171 @@
+#poiFormShell {
+	/* padding: 10px; */
+	/* background: #EFEFEF; */
+	/* border: solid 2px #000; */
+	/* margin: 0px auto; */
+	padding-right: 200px;
+}
+#poiFormShell p.col {
+	/* width: 35%; */
+	/* text-align: right; */
+	font-size: 12px;
+}
+#poiFormShell input[type=text] {
+	width: 100%;
+	text-align: left;
+}
+#poiFormShell .col {
+	/* text-align: right; */
+	margin: 4px;/* width: 400px; */
+}
+#poiFormShell .col h3 {
+	text-align: left;
+	padding-bottom: 12px;
+}
+#poiFormShell #submit {
+	margin-left: 60px;
+	width: 200px;
+	font-size: 16px;
+}
+#poiFormShell .col2 {
+	float: right;
+	margin-right: 40px;
+}
+li.content p {
+/* border: none; */
+}
+li.content {
+	padding: 10px;
+	overflow: hidden;
+	border: solid 1px #ccc;
+}
+li.title h3 a {
+	font-weight: normal !important;
+	color: #1F668F !important;
+}
+li.url {
+	overflow: hidden;
+	height: 25px;
+}
+div#rightBanner {
+	width: 170px;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	background: #ccc;
+}
+div#poiForm {
+	/* width: 700px; */
+    position: relative;
+}
+#leftBanner {
+	width:200px;
+	background: #fff;
+	float:left;
+	margin-right:10px;
+	padding: 10px;
+}
+.locationFinder {
+	height:55px;
+}
+#categoryList {
+	font-size: 12px;
+	margin-top: 10px;
+}
+#categoryList label {
+	display: block;
+	background: #3C6992;
+	margin: 3px 0px;
+	/* margin-top: -2px; */
+	padding: 2px 10px;
+	color: #FFF;
+	letter-spacing: 0.5px;
+	border-radius: 2px;
+	box-shadow: 0px 6px 10px -6px #000;
+}
+ul#categoryList li.active {
+	background: #7AD;
+	box-shadow: 0px 0px 6px -2px #000;
+	margin-bottom: 2px;
+	margin-top: 0px;
+}
+input#catCreator {
+	border: solid 4px #7AD;
+	border-radius: 3px;
+}
+#slider-range .sliderDisplay {
+	display: block;
+	position: absolute;
+	top: -15px;
+	background: #000;
+	color: #fff !important;
+	font-size: 14px;
+	padding: 0px 4px;
+	width: 40px;
+	left: -14px;
+}
+#rightBanner .sorterPlaceHolder {
+	position: relative;
+	width: 70px;
+	height: 50px;
+	margin: 10px 7px;
+	float: left;
+	background:#fff;
+}
+#rightBanner li.image {
+	position: relative;
+	width: 70px;
+	height: 50px;
+	margin: 10px 7px;
+	float: left;
+}
+#rightBanner .deleteImg {
+	position: absolute;
+	display: block;
+	right: -10px;
+	top: -10px;
+	background: #FFF;
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+	color: #C33;
+	text-align: center;
+	border-radius: 14px;
+	border: solid 1px #333;
+}
+#rightBanner .deleteImg:hover {
+	background: #c33;
+	color: #fff;
+}
+#rightBanner a.poiSlide {
+	display: block;
+	border: solid 1px #000;
+	overflow: hidden;
+	height: inherit;
+	background: #000;
+}
+#rightBanner img.poiSlideImg {
+	height: auto;
+	width: 100%;
+	background:#fff;
+}
+div#content {
+	height: 220px;
+}
+#rightBanner li.image:first-child {
+/* margin-top: 10px; */
+}
+h3.eraHeader,
+h3.eraHeader * {
+	background: #3B5671;
+	padding: 0px 3px;
+	color: #fff !important;
+	margin-bottom: 1px;
+	font-size: 14px;
+}
+.poi.tr div {
+	font-size: 12px;
+	padding: 0px 4px;
+	border-bottom: solid 1px #ddd;
+}

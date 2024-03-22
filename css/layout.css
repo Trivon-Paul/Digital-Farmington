@@ -1,0 +1,204 @@
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------Layout Structure-------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#mainContent #contentRow1{
+	display:table;
+	width:100%;
+}
+#mainContent #contentRow1 #content1{
+	display:table-cell;
+	vertical-align:top;
+	width:100%;
+}
+#mainContent #contentRow2,
+#mainContent #contentRow3 {
+	display:none;
+	width:100%;
+}
+#mainContent #contentRow1 #content2,
+#mainContent #contentRow2 #content3,
+#mainContent #contentRow2 #content4,
+#mainContent #contentRow3 #content5,
+#mainContent #contentRow3 #content6 {
+	display:none;
+	vertical-align:top;
+}
+#mainContent #contentRow1 #content1 *,
+#mainContent #contentRow1 #content2 *,
+#mainContent #contentRow2 #content3 *,
+#mainContent #contentRow2 #content4 *,
+#mainContent #contentRow3 #content5 *,
+#mainContent #contentRow3 #content6 *{
+	max-width:100%;
+}
+#row1Slider,
+#row2Slider,
+#row3Slider {
+	display:none;
+}
+
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+
+
+/*--Set Up Rows--*/
+/*--Row 2 - 1 Col--*/
+#mainContent.layout01000 #contentRow2,
+#mainContent.layout01010 #contentRow2,
+#mainContent.layout01011 #contentRow2,
+#mainContent.layout11000 #contentRow2,
+#mainContent.layout11010 #contentRow2,
+#mainContent.layout11011 #contentRow2,
+/*--Row 2 - 2 Col--*/
+#mainContent.layout01100 #contentRow2,
+#mainContent.layout01110 #contentRow2,
+#mainContent.layout01111 #contentRow2,
+#mainContent.layout11100 #contentRow2,
+#mainContent.layout11110 #contentRow2,
+#mainContent.layout11111 #contentRow2,
+/*--Row 3 - 1 Col--*/
+#mainContent.layout00010 #contentRow3,
+#mainContent.layout01010 #contentRow3,
+#mainContent.layout01110 #contentRow3,
+#mainContent.layout11010 #contentRow3,
+#mainContent.layout11110 #contentRow3,
+/*--Row 3 - 2 Col--*/
+#mainContent.layout00011 #contentRow3,
+#mainContent.layout01011 #contentRow3,
+#mainContent.layout01111 #contentRow3,
+#mainContent.layout11011 #contentRow3,
+#mainContent.layout11111 #contentRow3{
+	display:table;
+	width:100%;
+}
+
+
+/*--Set Up For Multi-Column--*/
+/*--Row 1--*/
+/*--Content1--*/
+#mainContent.layout10000 #contentRow1 #content1,
+#mainContent.layout11000 #contentRow1 #content1,
+#mainContent.layout11100 #contentRow1 #content1,
+#mainContent.layout11010 #contentRow1 #content1,
+#mainContent.layout11011 #contentRow1 #content1,
+#mainContent.layout11110 #contentRow1 #content1,
+#mainContent.layout11111 #contentRow1 #content1,
+/*--Content2--*/
+#mainContent.layout10000 #contentRow1 #content2,
+#mainContent.layout11000 #contentRow1 #content2,
+#mainContent.layout11100 #contentRow1 #content2,
+#mainContent.layout11010 #contentRow1 #content2,
+#mainContent.layout11011 #contentRow1 #content2,
+#mainContent.layout11110 #contentRow1 #content2,
+#mainContent.layout11111 #contentRow1 #content2,
+/*--Row 2--*/
+/*--Content3--*/
+#mainContent.layout01100 #contentRow2 #content3,
+#mainContent.layout01110 #contentRow2 #content3,
+#mainContent.layout01111 #contentRow2 #content3,
+#mainContent.layout11100 #contentRow2 #content3,
+#mainContent.layout11110 #contentRow2 #content3,
+#mainContent.layout11111 #contentRow2 #content3,
+/*--Content4--*/
+#mainContent.layout01100 #contentRow2 #content4,
+#mainContent.layout01110 #contentRow2 #content4,
+#mainContent.layout01111 #contentRow2 #content4,
+#mainContent.layout11100 #contentRow2 #content4,
+#mainContent.layout11110 #contentRow2 #content4,
+#mainContent.layout11111 #contentRow2 #content4,
+/*--Row 3--*/
+/*--Content5--*/
+#mainContent.layout00011 #contentRow3 #content5,
+#mainContent.layout11011 #contentRow3 #content5,
+#mainContent.layout11111 #contentRow3 #content5,
+#mainContent.layout01011 #contentRow3 #content5,
+#mainContent.layout01111 #contentRow3 #content5,
+/*--Content6--*/
+#mainContent.layout00011 #contentRow3 #content6,
+#mainContent.layout11011 #contentRow3 #content6,
+#mainContent.layout11111 #contentRow3 #content6,
+#mainContent.layout01011 #contentRow3 #content6,
+#mainContent.layout01111 #contentRow3 #content6 {
+	display:table-cell;
+	vertical-align:top;
+	width:50%;
+	position: relative;
+	height: 100%;
+}
+
+/*--Set Up For Single-Column--*/
+/*--Row 2--*/
+#mainContent.layout01000 #contentRow2 #content3,
+#mainContent.layout01010 #contentRow2 #content3,
+#mainContent.layout01011 #contentRow2 #content3,
+#mainContent.layout11000 #contentRow2 #content3,
+#mainContent.layout11010 #contentRow2 #content3,
+#mainContent.layout11011 #contentRow2 #content3,
+/*--Row 3--*/
+#mainContent.layout01010 #contentRow3 #content5,
+#mainContent.layout01110 #contentRow3 #content5,
+#mainContent.layout11010 #contentRow3 #content5,
+#mainContent.layout11110 #contentRow3 #content5{
+	display:table-cell;
+	vertical-align:top;
+	width:100%
+}
+
+/*--Set Up For Slider On Multi-Column--*/
+/*--Row 1--*/
+#mainContent.layout10000 #row1Slider,
+#mainContent.layout11000 #row1Slider,
+#mainContent.layout11100 #row1Slider,
+#mainContent.layout11010 #row1Slider,
+#mainContent.layout11011 #row1Slider,
+#mainContent.layout11110 #row1Slider,
+#mainContent.layout11111 #row1Slider,
+/*--Row 2--*/
+#mainContent.layout01100 #row2Slider,
+#mainContent.layout01110 #row2Slider,
+#mainContent.layout01111 #row2Slider,
+#mainContent.layout11100 #row2Slider,
+#mainContent.layout11110 #row2Slider,
+#mainContent.layout11111 #row2Slider,
+/*--Row 3--*/
+#mainContent.layout00011 #row3Slider,
+#mainContent.layout10011 #row3Slider,
+#mainContent.layout11011 #row3Slider,
+#mainContent.layout11111 #row3Slider,
+#mainContent.layout01011 #row3Slider,
+#mainContent.layout01111 #row3Slider {
+	display:block;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------Banner Code------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#mainContent #sideBanner {
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	width:220px;
+	padding:20px;
+	background:#eed;
+	display:none;
+}
+/*------------------------------------------------------*/
+/*-------------------Right Banner-----------------------*/
+#mainContent.bannerRight #sideBanner {
+	display:block;
+	right:0px;
+}
+#mainContent.bannerRight #pageContent {
+	width:710px;
+}/*------------------------------------------------------*/
+/*-------------------Left Banner-------------------------*/
+#mainContent.bannerLeft #sideBanner {
+	display:block;
+	left:0px;
+}
+#mainContent.bannerLeft #pageContent {
+	width:710px;
+	margin-left: 240px;
+}

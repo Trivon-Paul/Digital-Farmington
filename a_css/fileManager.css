@@ -1,0 +1,10 @@
+#fileManager {
+	display:block;
+	width:100%;
+	position:absolute;
+	top:160px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	background:#ECECEC;
+}

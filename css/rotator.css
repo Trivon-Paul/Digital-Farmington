@@ -1,0 +1,104 @@
+#sub_rotator {
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	height: inherit;
+}
+#sub_rotator .rotator_image img {
+	/* display: block; */
+	height: auto;
+	position: absolute;
+	margin: 0px auto;
+	top: 100%;
+}
+#rotator_prev,
+#rotator_next {
+	background: URL(../img/right.png) center center no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-left: 10px;
+}
+#rotator_next {
+	background: URL(../img/left.png) center center no-repeat;
+	float: right;
+}
+#sub_rotator > .rotator_image {
+	position: relative;
+	width: inherit;
+	height: inherit;
+}
+#sub_rotator > .rotator_image > div {
+	position: relative;
+	z-index: 1;
+	left: 0px;
+	right: 0px;
+}
+#sub_rotator > .rotator_image > .active {
+	z-index: 10;
+	position: relative;
+	margin:0px auto;
+	top: 0px;
+}
+#sub_rotator > .rotator_image > .lastSlide {
+	z-index: 9;
+	position:relative;
+	margin:0px auto;
+	top:0px;
+}
+/*
+Code to include rotator Buttons
+#rotator_buttons {
+	position: absolute;
+	bottom: 20px;
+	right: 40px;
+	z-index: 20;
+}
+*/
+#rotator_buttons {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	left: 10px;
+	margin-top: -10px;
+	z-index: 20;
+}
+#rotator_buttons .slide_button {
+	background: #ccc;
+	float: left;
+	border-radius: 8px;
+	width: 16px;
+	height: 16px;
+	margin-top: 2px;
+	margin-left: 10px;
+	border: solid 1px rgba(0,0,0,0.6);
+}
+#rotator_buttons .slide_button.active {
+	background: #fff;
+	border-color: #fff;
+}
+#loading {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	z-index: 9999999999999999999999;
+	background: #254964;
+}
+#loading img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-15px;
+	display: block;
+	width: 30px;
+	height: 30px;
+    -webkit-animation: rotation 0.7s infinite steps(12);
+	animation: rotation 0.7s infinite steps(12);
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);transform: rotate(359deg);}
+}

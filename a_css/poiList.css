@@ -1,0 +1,54 @@
+ html, body{
+        overflow: auto;
+    }
+
+.poi {
+	font-size: 12px;
+	border-top: solid 1px #666;
+	padding:0px 5px;
+}
+.poi:nth-child(2n) {
+	background: #eee;
+}
+.poi .catList {
+	font-size: 12px;
+	padding: 3px 5px;
+	display: inline-block;
+}
+span.category {
+	display: inline-block;
+	margin-left: 10px;
+	border-left: solid 1px #333;
+	padding-left: 10px;
+}
+span.category:first-child {
+	border: none;
+}
+.poi p {
+	display: inline-block;
+	width: 50%;
+}
+.poi a {
+	display: block;
+	padding: 2px;
+}
+.poi a:hover {
+	background: #ddd;
+}
+.timePeriod {
+	border-bottom: solid 1px #333;
+}
+.dateRange {
+	display: inline-block;
+	width: 100px;
+}
+h3.eraHeader {
+    background: #666;
+    margin-top: 5px;
+    padding: 1px 10px;
+    line-height: 100% !important;
+    color: #fff !important;
+    font-weight: 300 !important;
+    letter-spacing: 1px;
+}
+

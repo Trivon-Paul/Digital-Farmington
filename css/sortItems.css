@@ -1,0 +1,25 @@
+/*------PAGE MANAGER-------*/
+ol.pageSorter li {
+	cursor: row-resize !important;
+	background:url(../img/moveUpDown.png) 4px center no-repeat #A3C087;
+	padding:3px 0px 2px 20px;
+	margin-bottom:1px;
+	height:27px;
+}
+ol.pageSorter li.active:hover,
+ol.pageSorter li:hover {
+	background-color:#d3f0b7;
+}
+ol.pageSorter li.active {
+	background:url(../img/moveUpDown.png) 4px center no-repeat #c3e0a7;
+}
+/*------GALLERY MODULE-------*/
+ol.gallerySorter li.galleryObject .anchor {
+	cursor: row-resize !important;
+	background:url(../img/moveUpDown.png) 4px center no-repeat #A3C087;
+	width:20px;
+	height:80px;
+}
+ol.gallerySorter li.galleryObject .anchor:hover {
+	background:url(../img/moveUpDown.png) 4px center no-repeat #c3e0a7;
+}
