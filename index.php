@@ -38,14 +38,19 @@ iframe {
 	width:100%;
 	height:100%;
 }
+a:hover {
+    color: #888888 !important;
+}
 </style>
 
 </head>
 <body>
     
 <div id="container">
-  <div id="topBanner">
+  <div id="topBanner"><div style="display: flex; justify-content: space-between;">
     <h1><a href="https://digitalfarmington.org" style="color: white; text-decoration:none;">Digital Farmington</a></h1>
+    <h4><a href="/login.php" style="color: white; text-decoration:none; text-align: right;">Admin Login</a></h1>
+  </div>
   </div>
   <div id="mainContent">
       <iframe src="/map.php" width="100%" height="600"> 
