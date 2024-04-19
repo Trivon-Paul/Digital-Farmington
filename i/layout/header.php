@@ -24,6 +24,9 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css" />
 <link href="css/default.css" rel="stylesheet" type="text/css" />
 <link href="css/utility.css" rel="stylesheet" type="text/css" />
+<link href='a_css/login.css' rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+
 <script src="js/default.js"></script>
 <script src="js/utility.js"></script>
 <script src="js/rotator.js"></script>
