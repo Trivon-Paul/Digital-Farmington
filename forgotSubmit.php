@@ -28,7 +28,7 @@
                     $resetLink = "https://digitalfarmingtonmap.org/recover.php?token=$token";
                     $subject = 'Password Reset Request';
                     $message = "Click the following link to reset your password: $resetLink";
-                    $headers = 'From: roreply@digitalfarmingtonmap.org';
+                    $headers = 'From: noreply@digitalfarmington.org';
 
                     mail($email, $subject, $message, $headers);
                 } else {
