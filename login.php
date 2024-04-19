@@ -73,7 +73,6 @@ if (isset($_POST['login'])) {
         $message = "You are now logged out";
     }
 }
-mysqli_stmt_close($stmt);
 /* --------------------End Form Processing-------------------- */
 ?>
 <?php require("i/layout/header.php"); ?>
@@ -96,6 +95,8 @@ mysqli_stmt_close($stmt);
             </div>
             <input type="submit" name="login" value="Login" id="submit" />
         </form>
+        <br />
+        <a href="https://digitalfarmingtonmap.org/forgot.php">Forgot Password</a>
     </section>
 </body>
 </html>
