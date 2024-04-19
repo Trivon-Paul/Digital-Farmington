@@ -17,6 +17,23 @@ function getAdminUserID($userID){
 	}
 }
 
+function getAdminEmail($email){
+	global $DBConnect;
+
+	$query = "SELECT * FROM admin WHERE email='".$email."' LIMIT 1";
+	//Changed from $result = mysql_query($query, $DBConnect);
+	$result = mysqli_query($DBConnect, $query);
+	confirmQuery($result);
+	
+	//if no rows are returned, fetch_array will return false
+	//CHANGED SQLI 
+	if ($user = mysqli_fetch_array($result)){
+		return $user;
+	} else {
+		return NULL;
+	}
+}
+
 function getAdminUsers(){
 	global $DBConnect;
 
