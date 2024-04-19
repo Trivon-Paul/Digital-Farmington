@@ -1,4 +1,3 @@
-
 <?php require_once('i/DB/DBConnect.php'); ?>
 <?php require_once('i/DB/session.php'); ?>
 <?php require_once('i/functions/functions.php'); ?>
@@ -20,7 +19,7 @@
                     $token = bin2hex(random_bytes(32));
                     // Save the token in the database with an expiration time (e.g., 1 hour)
                     $expiration = date('Y-m-d H:i:s', strtotime('+1 hour'));
-                    $query = "UPDATE admins SET reset_token = ".$token.", reset_expiration = ".$expiration." WHERE email = ".$email."";
+                    $query = "UPDATE admin SET reset_token = '$token', reset_expiration = '$expiration' WHERE email = '$email'";
                     $result = mysqli_query($DBConnect, $query);
                     confirmQuery($result);
 
