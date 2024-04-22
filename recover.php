@@ -10,6 +10,39 @@ $login = true;
 /* --------------------Form Processing-------------------- */
 if (isset($_POST['login'])) {
 
+    //FORM VALIDATION
+    $errors = array();
+
+    $requiredFields = array("username", "password");
+    $errors = array_merge($errors, checkRequiredFields($requiredFields));
+
+    global $DBConnect;
+    $username = trim($_POST['username']);
+    $new_password = trim($_POST['password']);
+
+    $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
+
+    if (empty($errors)) {
+
+        $query = "UPDATE admin SET password = ? WHERE username = ?";
+
+        $stmt = mysqli_stmt_init($DBConnect);
+
+        if (mysqli_stmt_prepare($stmt, $query)) {
+            //bind parameters to dummy variables in query
+            mysqli_stmt_bind_param($stmt, 'ss', $hashed_password, $username);//, $passwordEncryped);
+            //Execute Query
+            mysqli_stmt_execute($stmt);
+            //Close mysql statement (prevents query conflicts)
+            mysqli_stmt_close($stmt);
+        }
+
+    } else {
+
+        //Error in Update
+        $message = "Reset Failed<br />Something went wrong!";
+    }
+
 } else {
     //echo "<script>alert('Please fill out the form');</script>";
 }
