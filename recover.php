@@ -20,7 +20,7 @@ if (isset($_POST['login'])) {
     $username = trim($_POST['username']);
     $new_password = trim($_POST['password']);
 
-    $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
+    $hashed_password = encryptPassword($new_password);
 
     if (empty($errors)) {
 
