@@ -81,8 +81,8 @@
 <body>
 <div id="resetMap" class="clickable">Reset Map</div>
 <div id="pip-pano"></div>
-<div id="map-canvas" <?php echo $admin ? "style='top:46px;'" : ""; ?>></div>
-<div id="rightBanner" <?php echo $admin ? "style='top:46px;'" : ""; ?>>
+<div id="map-canvas" <?php echo $admin ? "style='top:56px;'" : ""; ?>></div>
+<div id="rightBanner" <?php echo $admin ? "style='top:56px;'" : ""; ?>>
   <div id="categories">
     <h2>Categories</h2>
     <?php echo buildCategoryList(array(),$frontEnd = true); ?> 
