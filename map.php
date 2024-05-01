@@ -71,6 +71,10 @@
         background-color: lightgrey;
     }
 
+    div.gm-style-mtc {
+        display: none;
+    }
+
     
 </style>
 </head>
