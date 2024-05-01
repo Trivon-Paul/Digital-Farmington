@@ -35,8 +35,6 @@ if (isset($_POST['login'])) {
             mysqli_stmt_execute($stmt);
             //Close mysql statement (prevents query conflicts)
             mysqli_stmt_close($stmt);
-
-            adminLogIn($user);	//log in
         }
 
     } else {
