@@ -83,7 +83,6 @@
 <div id="pip-pano"></div>
 <div id="map-canvas" <?php echo $admin ? "style='top:36px;'" : ""; ?>></div>
 <div id="rightBanner" <?php echo $admin ? "style='top:36px;'" : ""; ?>>
-  <div id="mapThumbnail"><img src="img/farmMap.jpg" id="mapThumbImg" /></div>
   <div id="categories">
     <h2>Categories</h2>
     <?php echo buildCategoryList(array(),$frontEnd = true); ?> 
