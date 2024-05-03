@@ -32,7 +32,7 @@ if (isset($_POST['login'])) {
 
         if (mysqli_stmt_prepare($stmt, $query)) {
             //bind parameters to dummy variables in query
-            mysqli_stmt_bind_param($stmt, 'sss', $hashed_password, $username, $token);//, $passwordEncryped);
+            mysqli_stmt_bind_param($stmt, 'sss', $hashed_password, $token);//, $passwordEncryped);
             //Execute Query
             mysqli_stmt_execute($stmt);
             //Close mysql statement (prevents query conflicts)
@@ -64,7 +64,7 @@ if (isset($_POST['login'])) {
     <?php include('i/layout/adminTopNavBar.php'); ?>
     <section id="login" class="dropShadow_deep">
         <h1>Create New Password</h1>
-        <form id="loginForm" action="login.php" method="post" onsubmit="return checkValues()">
+        <form id="loginForm" action="admin.php" method="post" onsubmit="return checkValues()">
             <div id="loginMain">
                 <div class="row">
                     <p class="col" style="text-align:left; width: 140px;">Enter Password:</p>
