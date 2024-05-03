@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
 
     // Validate form 
     $errors = array();
-    $requiredFields = array("username", "password");
+    $requiredFields = array("password");
     $errors = array_merge($errors, checkRequiredFields($requiredFields));
     
     //Get variables from requests
@@ -64,12 +64,8 @@ if (isset($_POST['login'])) {
     <?php include('i/layout/adminTopNavBar.php'); ?>
     <section id="login" class="dropShadow_deep">
         <h1>Create New Password</h1>
-        <form id="loginForm" action="" method="post" onsubmit="return checkValues()">
+        <form id="loginForm" action="login.php" method="post" onsubmit="return checkValues()">
             <div id="loginMain">
-                <div class="row">
-                    <p class="col" style="text-align:left; width: 140px;">Username:</p>
-                    <input type="text" name="username" value="" id="username" placeholder="Enter Username" class="col"/>
-                </div>
                 <div class="row">
                     <p class="col" style="text-align:left; width: 140px;">Enter Password:</p>
                     <input type="password" name="password" value="" placeholder="Enter password" id="password" class="col"/>
