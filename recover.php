@@ -10,31 +10,35 @@ $login = true;
 /* --------------------Form Processing-------------------- */
 if (isset($_POST['login'])) {
 
-    //FORM VALIDATION
+    // Validate form 
     $errors = array();
-
     $requiredFields = array("username", "password");
     $errors = array_merge($errors, checkRequiredFields($requiredFields));
-
+    
+    //Get variables from requests
     global $DBConnect;
-    $username = trim($_POST['username']);
+    $token = $_GET["token"];
     $new_password = trim($_POST['password']);
-
+    
+    // Encrypt password
     $hashed_password = encryptPassword($new_password);
 
+    // Check if form was valid
     if (empty($errors)) {
-
-        $query = "UPDATE admin SET password = ? WHERE username = ?";
+        // Find admin account and set password to new password
+        $query = "UPDATE admin SET password = ? WHERE reset_token = ?";
 
         $stmt = mysqli_stmt_init($DBConnect);
 
         if (mysqli_stmt_prepare($stmt, $query)) {
             //bind parameters to dummy variables in query
-            mysqli_stmt_bind_param($stmt, 'ss', $hashed_password, $username);//, $passwordEncryped);
+            mysqli_stmt_bind_param($stmt, 'sss', $hashed_password, $username, $token);//, $passwordEncryped);
             //Execute Query
             mysqli_stmt_execute($stmt);
             //Close mysql statement (prevents query conflicts)
             mysqli_stmt_close($stmt);
+
+            adminLogIn($user); //log in
         }
 
     } else {
@@ -60,8 +64,7 @@ if (isset($_POST['login'])) {
     <?php include('i/layout/adminTopNavBar.php'); ?>
     <section id="login" class="dropShadow_deep">
         <h1>Create New Password</h1>
-        <form id="loginForm" action="recover.php" method="post" onsubmit="return checkValues()">
-            <!--<form id="recoverForm" onsubmit="return checkValues()">-->
+        <form id="loginForm" action="" method="post" onsubmit="return checkValues()">
             <div id="loginMain">
                 <div class="row">
                     <p class="col" style="text-align:left; width: 140px;">Username:</p>
@@ -100,5 +103,5 @@ if (isset($_POST['login'])) {
                 return false;
             }
         }
-</script>-->
+</script>
 </html>
